@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container__calendar {
+  width: 1000px;
+}
