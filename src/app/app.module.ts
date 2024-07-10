@@ -12,6 +12,7 @@ import { AddComponent } from './components/add/add.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AllVenuesComponent } from './components/all-venues/all-venues.component';
+import { EditComponent } from './components/edit/edit.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AllVenuesComponent } from './components/all-venues/all-venues.component
     HeaderComponent,
     MainComponent,
     AddComponent,
-    AllVenuesComponent
+    AllVenuesComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

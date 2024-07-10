@@ -10,6 +10,8 @@ export class VenueService {
   api: string = 'http://localhost:3000/exhibitions';
   menuOpen = new BehaviorSubject<boolean>(false);
   menuOpen$ = this.menuOpen.asObservable();
+  editedExibition = new BehaviorSubject<Exhibition | null>(null);
+  editedExibition$ = this.editedExibition.asObservable();
 
   constructor(private http: HttpClient) {}
 
@@ -17,7 +19,11 @@ export class VenueService {
     this.menuOpen.next(value);
   }
 
-  getExhibitons():Observable<Exhibition[]> {
+  setEditExhibition(exhibition: Exhibition) {
+    this.editedExibition.next(exhibition);
+  }
+
+  getExhibitons(): Observable<Exhibition[]> {
     return this.http.get<Exhibition[]>(`${this.api}`);
   }
 
@@ -29,7 +35,11 @@ export class VenueService {
     return this.http.put<Exhibition>(`${this.api}/${id}`, exhibition);
   }
 
-  deleteExhibition(id: number):Observable<void> {
+  deleteExhibition(id: string): Observable<void> {
     return this.http.delete<void>(`${this.api}/${id}`);
+  }
+
+  getExhibitionById(id: string): Observable<Exhibition> {
+    return this.http.get<Exhibition>(`${this.api}/${id}`);
   }
 }

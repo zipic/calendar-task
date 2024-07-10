@@ -1,7 +1,10 @@
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 .container__calendar {
-  width: 1000px;
+  margin-left: 10px;
+  width: 100vh;
 }

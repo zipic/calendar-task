@@ -1,0 +1,16 @@
+{
+  "exhibitions": [
+    {
+      "id": "0.4667864659122358",
+      "title": "Pavel birthaday",
+      "date": "2024-07-11",
+      "venue": "Akvarel"
+    },
+    {
+      "id": "0.7853673002200985",
+      "title": "Veronika birthday",
+      "date": "2024-08-05",
+      "venue": "Melnyk house"
+    }
+  ]
+}
