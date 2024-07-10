@@ -1,8 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .fc .fc-button-primary {
-  background-color:rgb(59 130 246 / 0.5);
+  background-color: rgb(59 130 246 / 0.5);
+}
+.rounded-lg {
+  border: 1px solid black;
+}
+
+.text-gray-800 {
+  color: red;
+}
+
+.bg-blue-700 {
+  background-color: #2463EB;
 }
