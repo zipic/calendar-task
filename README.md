@@ -1,27 +1,35 @@
 # CalendarTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+This project is a web application that allows users to manage exhibitions. It includes functionalities for adding, editing, deleting, and viewing exhibitions, and displays them on a calendar
 
-## Development server
+## Techonologies used:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- TypeScript
+- Angular
+- RxJs
+- FullCalendar
+- Preline
+- Mock api server
+- Testing
 
-## Code scaffolding
+## Quick start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- git clone https://github.com/your-repo/calendar-task
+- cd calendar-task
+- npm install
+- ng server
+- json-server --watch db.json --port 3000
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## API endpoints
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+GET /exhibitions - Get all exhibitions
+POST /exhibitions - Add a new exhibition
+PUT /exhibitions/:id - Update an exhibition
+DELETE /exhibitions/:id - Delete an exhibition
+GET /exhibitions/:id - Get an exhibition by ID
 
-## Running end-to-end tests
+## Unit tests
+ng test
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
