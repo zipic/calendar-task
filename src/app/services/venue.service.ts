@@ -31,7 +31,7 @@ export class VenueService {
     return this.http.post<Exhibition>(`${this.api}`, exhibition);
   }
 
-  updateExhibitiom(id: number, exhibition: Exhibition): Observable<Exhibition> {
+  updateExhibitiom(id: string, exhibition: Exhibition): Observable<Exhibition> {
     return this.http.put<Exhibition>(`${this.api}/${id}`, exhibition);
   }
 

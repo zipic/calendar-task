@@ -10,6 +10,7 @@ export class MainComponent implements OnInit {
   isMenuOpen!: boolean;
 
   constructor(private venueService: VenueService) {}
+
   ngOnInit(): void {
     this.venueService.menuOpen$.subscribe((value) => {
       this.isMenuOpen = value;
